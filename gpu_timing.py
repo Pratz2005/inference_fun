@@ -22,7 +22,7 @@ print(f"No sync has median of {statistics.median(no_sync)} ms")
 
 for i in range(10):
     output = tensor_a @ tensor_b
-
+torch.cuda.synchronize()
 
 start_event = torch.cuda.Event(enable_timing = True)
 end_event = torch.cuda.Event(enable_timing = True)
