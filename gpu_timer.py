@@ -1,5 +1,5 @@
 class GPUTimer:
-    def _init_(self, warmup=10, reps=20):
+    def __init__(self, warmup=10, reps=20):
         self.warmup = warmup
         self.reps = reps
 
