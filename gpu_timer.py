@@ -1,3 +1,6 @@
+import torch
+import statistics
+
 class GPUTimer:
     def __init__(self, warmup=10, reps=20):
         self.warmup = warmup
